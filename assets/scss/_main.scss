@@ -37,3 +37,123 @@
     }
 }
 
+.page-content {
+    margin-top: 30px;
+}
+
+.item {
+    &-wrapper {
+        position: relative;
+        border: 1px solid $color-light;
+        margin-bottom: 30px;
+        
+        .contaner-fluid {
+            background-color: rgba($color-dark, 0.5);
+        }
+    }
+
+    &-image {
+        display: flex;
+        overflow: hidden;
+        background-color: rgba($color-light, 0.75);
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-title {
+        color: $color-light;
+        font-size: 1.75rem;
+        padding-top: 0.75rem;
+    }
+
+    &-description {
+        color: $color-light;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    &-characteristics {
+        margin-top: 15px;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+
+        span {
+            display: block;
+            color: $color-light;
+
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+    }
+
+    &-buttons {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        button {
+            display: block;
+
+            width: 30px;
+            height: 30px;
+            padding: 0;
+
+            &:last-child {
+                margin-top: 5px !important;
+            }
+        }
+    }
+
+    &-price {
+        text-align: center;
+        color: $color-light;
+
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    &-actions {
+        padding: 15px;
+
+        button {
+            margin-bottom: 30px !important;
+            padding: 8px 5px 10px;
+
+            text-transform: uppercase;
+
+            color: $color-light;
+            border-color: $color-light;
+            border-radius: 0;
+            font-weight: bold;
+
+            @media (min-width: 1200px) {
+                font-size: 1.15rem;
+            }
+            @media (max-width: 1199px) {
+                font-size: 0.9rem;
+            }
+
+            &:last-child {
+                margin-bottom: 15px !important;
+            }
+
+            &:hover {
+                color: $color-dark;
+                border-color: $color-light;
+                background-color: rgba($color-light, 0.75);
+            }
+
+            i {
+                margin-left: 5px;
+                font-size: 1rem;
+            }
+        }
+
+        &__cart {
+            background-color: rgba($color-light, 0.2);
+            transition: background-color 0.5s;
+        }
+    }
+}
+

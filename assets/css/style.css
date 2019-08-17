@@ -148,6 +148,120 @@ body {
   border-color: #ffffff;
 }
 
+.page-content {
+  margin-top: 30px;
+}
+
+.item-wrapper {
+  position: relative;
+  border: 1px solid #ffffff;
+  margin-bottom: 30px;
+}
+
+.item-wrapper .contaner-fluid {
+  background-color: rgba(44, 113, 182, 0.5);
+}
+
+.item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 180px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  padding-top: 0.75rem;
+}
+
+.item-description {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.item-characteristics {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.item-characteristics span {
+  display: block;
+  color: #ffffff;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.item-buttons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.item-buttons button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.item-buttons button:last-child {
+  margin-top: 5px !important;
+}
+
+.item-price {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.item-actions {
+  padding: 15px;
+}
+
+.item-actions button {
+  margin-bottom: 30px !important;
+  padding: 8px 5px 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.item-actions button:last-child {
+  margin-bottom: 15px !important;
+}
+
+.item-actions button:hover {
+  color: #2c71b6;
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.item-actions button i {
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+.item-actions__cart {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
 .sidebar-filter {
   padding: 15px 30px 30px;
   color: #ffffff;
@@ -244,6 +358,18 @@ body {
   .sidebar-filter {
     background-color: rgba(255, 255, 255, 0.25);
     border-right: 1px solid #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item-actions button {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .item-actions button {
+    font-size: 0.9rem;
   }
 }
 
