@@ -157,3 +157,13 @@
     }
 }
 
+.page-pagination {
+    &__more {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    a {
+        color: $color-light;
+        font-size: 2rem;
+    }
+}
